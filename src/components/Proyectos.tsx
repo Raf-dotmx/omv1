@@ -9,7 +9,7 @@ function Proyectos() {
 
       <div className="projects-grid">
         {projects.map((project: Project, index: number) => (
-          <div className="project-card" key={index}>
+          <div className="project-card" key={index} data-aos="zoom-in">
             
             <img src={project.image} alt={project.title} />
 

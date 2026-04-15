@@ -1,11 +1,13 @@
-import logo from '../assets/gato.png';
+import logo from '../assets/Logo.svg';
 
 //PascalCasing
 function Header() {
     //JSX
   return (
     <header className="header">
-        <img src={logo} alt="Logo" className="logo"/>
+        <a href="#" >
+          <img src={logo} alt="Logo" className="logo"/>
+        </a>
         <nav className="navbar">
         <a href="#about">Sobre mi</a>
         <a href="#proyectos">Proyectos</a>

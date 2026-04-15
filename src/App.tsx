@@ -3,8 +3,18 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Contacto from "./components/Contacto";
 import Proyectos from "./components/Proyectos";
+import { useEffect } from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="App">
       <Header />         {/* pon un boton tal vez */}

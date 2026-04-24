@@ -114,12 +114,19 @@ a:hover {
   object-fit: cover;
 }
 
+.hero-bg{
+    background-color: #020617;
+}
+
 .hero {
   text-align: center;  
   padding: 4rem;
-  background-color: #020617;
   margin-bottom: 2rem;
   font-size: 25px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {

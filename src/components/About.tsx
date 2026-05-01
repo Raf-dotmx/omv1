@@ -1,14 +1,27 @@
+import FloatingIcons from "./FloatingIcons";
 
 function About() {
   return (
-    <section id="about" className="container about flex" data-aos="fade-up" data-aos-delay="300">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy ingeniero de software enfocado en el desarrollo fullstack, con experiencia en la creación de aplicaciones web utilizando tecnologías como Angular, React y Node.js. <br />
-        También he trabajado con bases de datos SQL y desarrollo de APIs, buscando siempre construir soluciones eficientes y bien estructuradas. <br /><br />
-        De igual forma, he trabajado con tecnologías como Python, C#, Tableau, Unity y Blender, tengo bastante conocimiento en otros ambitos de software. <br />
-        Actualmente sigo fortaleciendo mis habilidades en React y arquitecturas modernas.
-      </p>
+    <section id="about" className="about-section" data-aos="fade-up-right" data-aos-delay="300">
+      <FloatingIcons />
+      <div className="container about" style={{ position: "relative", zIndex: 2 }}>
+        <h2>Sobre mí</h2>
+        <p>
+          Soy desarrollador de software de Mérida, Yucatán. Siempre tuve facilidad con la
+          tecnología — entender cómo funciona algo y cómo hacerlo más simple es lo que me
+          llevó al desarrollo.
+        </p>
+        <p>
+          Me gusta experimentar: gráficos, interfaces, ideas que todavía no sé si van a
+          funcionar. Lo que más disfruto es tomar algo complejo y reducirlo a algo que
+          cualquier persona pueda usar sin pensarlo dos veces.
+        </p>
+        <p>
+          Tengo experiencia construyendo aplicaciones web fullstack con Angular, React y
+          Node.js, trabajando con bases de datos SQL y desarrollando APIs. También he
+          explorado Python, C#, Unity y Blender.
+        </p>
+      </div>
     </section>
   );
 }

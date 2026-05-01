@@ -14,13 +14,13 @@ function Contacto() {
       </a>
 
       <div className="contact-links">
-        <a href="mailto:osvaldom1222@gmail.com">
+        <a href="mailto:osvaldom1222@gmail.com" aria-label="Enviar correo electrónico">
           <CgMail />
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/osvaldo-martinez-77082b38b" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn">
           <FaLinkedin />
         </a>  
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Raf-dotmx" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
           <FaGithub /> 
         </a>
       </div>

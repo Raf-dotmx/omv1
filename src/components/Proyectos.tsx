@@ -1,5 +1,5 @@
 import projects, {type Project} from "../data/projects";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLock } from "react-icons/fa";
 
 function Proyectos() {
     return (
@@ -23,15 +23,19 @@ function Proyectos() {
               ))}
             </div>
 
+            <hr className="links-divider" />
+
             <div className="links">
               {project.github && (
                 <a href={project.github} target="_blank" rel="noreferrer" className="icon-link" title="Github Repo">
-                  <FaGithub />
+                  <FaGithub /> Ver en GitHub
                 </a>
               )}
 
               {project.private && (
-                <span className="private">Código privado</span>
+                <span className="private">
+                  <FaLock /> Código privado
+                </span>
               )}
             </div>
 
@@ -43,4 +47,3 @@ function Proyectos() {
 }
 
 export default Proyectos;
-

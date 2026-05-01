@@ -255,7 +255,7 @@ a:hover {
 }
 
 .subtitle {
-  color: #cbd5e1; /* Mejor contraste */
+  color: #cbd5e1;
   margin-bottom: 2rem;
 }
 
@@ -308,29 +308,42 @@ section {
 }
 
 .techs {
-  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 12px;
 }
 
 .techs span {
   background: #020617;
-  padding: 0.3rem 0.6rem;
-  margin-right: 0.5rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
+  color: #94a3b8;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #334155;
   transition: all 0.3s ease;
   cursor: default;
+  white-space: nowrap
 }
 
 .techs span:hover {
   background: #ef4444;
   color: white;
+  border-color: #ef4444;
   transform: translateY(-2px);
 }
 
 .links {
-  margin-top: 1rem;
+  margin-top: 0;
   display: flex;
+  align-items: center;
   gap: 1rem;
+}
+
+.links-divider {
+  border: none;
+  border-top: 1px solid #1e293b;
+  margin: 12px 0;
 }
 
 .links a {
@@ -339,19 +352,21 @@ section {
 }
 
 .icon-link {
-  display: inline-flex;
+ display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 6px;
   background: #020617;
-  padding: 0.5rem;
-  border-radius: 8px;
-  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
   color: #e2e8f0;
+  border: 1px solid #334155;
   transition: all 0.3s ease;
 }
 
 .icon-link:hover {
   background: #ef4444;
+  border-color: #ef4444;
   color: white;
   transform: translateY(-3px);
 }
@@ -423,8 +438,11 @@ section {
 }
 
 .private {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 @media (max-width: 768px) {

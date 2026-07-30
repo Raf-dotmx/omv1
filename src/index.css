@@ -487,5 +487,9 @@ section {
     font-size: 0.8rem;
     padding-right: 0.5rem;
   }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 }
